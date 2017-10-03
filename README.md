@@ -1,2 +1,2 @@
 # reading-json
-Reading a JSON file from HTML - Update Interval one second
+Reading a JSON file from HTML - Update Interval: one second
