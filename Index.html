@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="one">
+        <span></span>
+    </div>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                console.log("document loaded");
+                $.getJSON("Json.json", function (json) {
+                    console.log("JSON Data: " + json.users[0].name);
+                    $('#one span').text(json.users[0].name);
+                });
+            }, 1000); // setInterval
+        });
+    </script>
+</body>
+</html>
